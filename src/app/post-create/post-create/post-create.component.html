@@ -1,0 +1,10 @@
+<form class="example-form">
+  <mat-card style="margin-top: 1rem">
+   <mat-form-field>
+    <textarea name="post" matInput rows="6" [(ngModel)]="newPost"></textarea>
+
+    <button  mat-raised-button (click)="NewPostAdded()">Submit</button>
+  </mat-form-field>
+  {{newPost}}
+</mat-card>
+</form>

@@ -1,0 +1,10 @@
+
+<main>
+    <app-post-create (PostCreated)="AddPost($event)"></app-post-create>
+    <div *ngFor = "let post of posts">
+        <app-post-list [post]="post" ></app-post-list>
+    </div>
+
+</main>
+
+
